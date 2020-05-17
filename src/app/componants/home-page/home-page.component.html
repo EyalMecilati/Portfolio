@@ -1,0 +1,27 @@
+<div class="container">
+    <span [ngSwitch]="operator">
+        <h1 *ngSwitchCase="'welcome'" class="name" [@changeColor]='step'>Hi, I'm Eyal Mecilati <br> A Full Stack Web
+            Developer.</h1>
+        <div *ngSwitchCase="'location'" class="locationTxt"><span>I currently live in Tel Aviv</span></div>
+        <p *ngSwitchCase="'phone'" class="phoneTxt">
+            You can reach me at this number 0546443142
+        </p>
+        <div class="projects" *ngSwitchCase="'projects'">
+            <img (click)="goToNewsApp()" *ngIf="projectChosen" class="newsPhoto" src="../../../assets/images/news.png" alt="news app">
+            <img (click)="goToUrbanjungleApp()" *ngIf="!projectChosen" class="newsPhoto" src="../../../assets/images/urban_jungle.png" alt="urban jungle project">
+            <span *ngIf="projectChosen" class="material-icons arrow" (click)="nextProject()">
+                arrow_forward_ios
+                </span>
+                <span (click)="nextProject()" *ngIf="!projectChosen" class="material-icons backArrow">
+                    arrow_back_ios
+                    </span>
+        </div>
+
+    </span>
+    <!-- <h1 class="name" [@changeColor]='step'>Hi, I'm Eyal Mecilati <br> A Full Stack Web Developer.</h1> -->
+    <div (click)="showLocation()" class="location"></div>
+    <div class="email"><a class="emailHref" target="_blank" href="mailto:eyal.m2552@gmail.com">d</a></div>
+    <div><a class="cvHref" [routerLink]="[ '/cv' ]">c</a></div>
+    <div class="phone" (click)="showPhone()"></div>
+    <div class="project" (click)="showProjects()"></div>
+</div>

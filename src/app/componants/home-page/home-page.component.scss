@@ -1,0 +1,257 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    // background-color: #f86449;
+    background-image: url("../../../assets/images/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Righteous", cursive;
+}
+
+.name {
+    font-family: "Righteous", cursive;
+    padding: 5px;
+    width: fit-content;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #120136;
+}
+
+.location {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 6%;
+    height: 10%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.project {
+    position: absolute;
+    top: 37%;
+    left: 68%;
+    width: 6%;
+    height: 13%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.newsPhoto {
+    transform: rotate(0.5deg);
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 62px;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    cursor: pointer;
+}
+
+.backArrow {
+    cursor: pointer;
+    font-size: 62px;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+
+.locationTxt {
+    color: #c3edea;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    height: 20%;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    padding: 40px;
+    width: 19%;
+    text-align: center;
+    background-image: url("../../../assets/images/tel-aviv.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    span {
+        position: relative;
+        bottom: 34px;
+    }
+}
+.telAviv {
+    padding-top: 10px;
+    margin-left: 18px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60%;
+}
+
+.email {
+    position: absolute;
+    top: 22%;
+    left: 38%;
+    width: 6%;
+    height: 10%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.emailHref {
+    font-size: 155px;
+    color: transparent;
+}
+.cvHref {
+    position: absolute;
+    top: 15%;
+    left: 49%;
+    font-size: 155px;
+    color: transparent;
+    z-index: 5;
+}
+
+.phone {
+    position: absolute;
+    top: 19%;
+    left: 60%;
+    width: 6%;
+    height: 15%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.phoneTxt {
+    background-color: white;
+    color: #27496d;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    height: 20%;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    padding: 40px;
+    width: 19%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .name {
+        position: absolute;
+        font-size: 12px !important;
+        width: 24vh !important;
+        right: 64.8% !important;
+        top: 13% !important;
+        height: 81px !important;
+        background-color: white;
+        transform: translateX(40.8vw) translateY(39vh);
+        line-height: 2.5 !important;
+        letter-spacing: normal !important;
+    }
+
+    .location {
+        top: 48%;
+        left: 10%;
+        width: 6%;
+        height: 7%;
+        background-color: transparent;
+    }
+
+    .locationTxt {
+        color: #f5a31a;
+        line-height: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        height: 3%;
+        position: absolute;
+        top: 53%;
+        left: 29%;
+        padding: 40px;
+        width: 25%;
+    }
+
+    .container {
+        background-size: 508px;
+    }
+
+    .emailHref {
+        font-size: 78px;
+    }
+
+    .email {
+        position: absolute;
+        top: 36.7%;
+        left: 23%;
+        width: 13%;
+        height: 8%;
+    }
+
+    .cvHref {
+        position: absolute;
+        height: 9%;
+        top: 33%;
+        left: 44%;
+        font-size: 155px;
+        color: transparent;
+        width: 17%;
+    }
+
+    .phone {
+        position: absolute;
+        top: 37%;
+        left: 67%;
+        width: 13%;
+        height: 9%;
+    }
+
+    .phoneTxt {
+        line-height: 20px;
+        font-size: 17px;
+        height: 13%;
+        width: 46%;
+        position: absolute;
+        top: 53%;
+        left: 29%;
+        text-align: center;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .project {
+        position: absolute;
+        top: 46%;
+        left: 83.3%;
+        width: 13%;
+        height: 8%;
+    }
+
+    .newsPhoto {
+        transform: rotate(0.5deg);
+        height: 18%;
+        width: 47%;
+        position: absolute;
+        top: 53%;
+        left: 28%;
+    }
+
+    .arrow{
+        font-size: 50px;
+        position: absolute;
+        top: 58%;
+        left: 82%;
+    }
+
+    .backArrow{
+        font-size: 50px;
+        top: 58%;
+        left: 14%;
+    }
+
+}

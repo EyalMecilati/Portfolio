@@ -1,0 +1,19 @@
+.cv {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../assets/images/cv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40px;
+    background-size: 35%;
+}
+
+@media screen and (max-width: 600px) {
+    .cv{
+        height: 100%;
+        width: 100%;
+        background-position: 14px 51px;
+        padding-bottom: 70px;
+        background-size: 334px;
+    }
+}
